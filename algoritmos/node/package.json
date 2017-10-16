@@ -1,0 +1,11 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "hackerrank",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "akuma",
+  "license": "ISC"
+}
