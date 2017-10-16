@@ -54,7 +54,7 @@ int main() {
     vector<long> ar(n);
 
     // leitura dos registros
-    for(int ar_i = 0; ar_i < n; ar_i++){
+    for(int ar_i = 0; ar_i < n; ar_i++) {
        cin >> ar[ar_i];
     }
 
