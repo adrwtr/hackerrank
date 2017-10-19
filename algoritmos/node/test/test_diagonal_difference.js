@@ -1,32 +1,41 @@
 var assert = require('assert');
+var objSolucao = require('../diagonal_difference.js');
 
-describe('test', function() {
-    describe('#test()', function() {
-        it('Diagonal Difference', function() {
+describe('Diagonal Difference', function() {
+    it('teste A', function() {
+        var array = new Array(
+            new Array(11, 2, 4),
+            new Array(4, 5, 6),
+            new Array(10, 8, -12)
+        );
 
-            var array = new Array(
-                new Array(11, 2, 4),
-                new Array(4, 5, 6),
-                new Array(10, 8, -12)
-            );
+        var nr_size = 3;
 
-            var size = 3;
-            var sizeTemp = size;
-            var sumA = 0;
-            var sumB = 0;
+        assert.equal(
+            15,
+            objSolucao.diagonal_difference(nr_size, array)
+        );
+    });
 
-            for (var i = 0; i < size; i++) {
-                sizeTemp--;
-                sumA += array[i][i];
-                sumB += array[i][sizeTemp];
-                console.log(sumA);
-                console.log(sumB);
-            }
+    it('teste B', function() {
+        var array2 = new Array(
+            new Array(11, 2, 4,   51),
+            new Array(4,  5, 6,   5),
+            new Array(10, 8, -12, 5),
+            new Array(10, 8, -12, 5)
+        );
+        /**
+        11+5-12+5 = 9
+        51+6+8+10 = 75
+        9 - 75 = 66
+        */
 
-            assert.equal(
-                15,
-                Math.abs(sumA - sumB)
-            );
-        });
+        var nr_size = 4;
+
+        assert.equal(
+            66,
+            objSolucao.diagonal_difference(nr_size, array2)
+        );
     });
 });
+
