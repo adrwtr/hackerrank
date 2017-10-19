@@ -38,7 +38,7 @@ The secondary diagonal is:
      4
    5
 10
-Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Sum across the secondary diagonal: 4 + 5 + 10 = 19
 Difference: |4 - 19| = 15
 
 Note: |x| is absolute value function
@@ -50,21 +50,38 @@ Note: |x| is absolute value function
 #include <algorithm>
 using namespace std;
 
+int diagonal_difference(
+    int nr_matrix_size,
+    vector< vector<int> > arrMatriz
+) {
+    int nr_size_temp = nr_matrix_size;
+    int nr_sum_a = 0;
+    int nr_sum_b = 0;
+
+    for (int i = 0; i < nr_matrix_size; i++) {
+        nr_size_temp--;
+        nr_sum_a += arrMatriz[i][i];
+        nr_sum_b += arrMatriz[i][nr_size_temp];
+    }
+
+    return std::abs(nr_sum_a - nr_sum_b);
+}
 
 int main() {
-    int nr_matrix_size;
+    int nr_matrix_size = 0;
+    int nr_resultado = 0;
 
     // define o tamanho da matrix
     cin >> nr_matrix_size;
-    
+
     vector< vector<int> > objVectorMatrix(
-    	nr_matrix_size, 
+    	nr_matrix_size,
     	vector<int>(nr_matrix_size)
     );
 
     // le os elementos da matriz
-    for (int a_i = 0;a_i < n;a_i++) {
-       for (int a_j = 0;a_j < n;a_j++) {
+    for (int a_i = 0; a_i < nr_matrix_size; a_i++) {
+       for (int a_j = 0; a_j < nr_matrix_size; a_j++) {
           cin >> objVectorMatrix[a_i][a_j];
        }
     }
@@ -73,6 +90,8 @@ int main() {
     	nr_matrix_size,
     	objVectorMatrix
 	);
+
+    cout << nr_resultado << endl;
 
     return 0;
 }
