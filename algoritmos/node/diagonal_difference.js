@@ -1,4 +1,4 @@
-var export_obj = {
+var obj_diagonal_difference = {
     diagonal_difference : function (nr_matrix_size, arrMatriz) {
         var nr_size_temp = nr_matrix_size;
         var nr_sum_a = 0;
@@ -14,4 +14,4 @@ var export_obj = {
     }
 };
 
-module.exports = export_obj;
+module.exports = obj_diagonal_difference;
