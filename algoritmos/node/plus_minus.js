@@ -2,7 +2,13 @@
 var obj_plus_minus = {	
 	plus_minus : function(nr_posicoes, arrValores) 
 	{
-		return this.contarValores(arrValores);
+		var objContador = this.contarValores(arrValores);
+
+		return {
+			vl_positivos : (objContador.nr_positivos / nr_posicoes).toFixed(6),
+			vl_negativos : (objContador.nr_negativos / nr_posicoes).toFixed(6),
+			vl_zeros : (objContador.nr_zeros / nr_posicoes).toFixed(6)
+		}
 	},
 
 	contarValores : function(arrValores) {
