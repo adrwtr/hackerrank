@@ -46,36 +46,23 @@ using namespace std;
 
 int main() {
     vector<int> arrValores(5);
-    long long soma_total = 0;
+
+    // iniciamos os valores
+    long long nr_soma = 0;        
+    long long nr_minimo = 1000000000;
+    long long nr_maximo = 0;
     
     // lendo valores
 	for(int i = 0; i < 5; i++){
        cin >> arrValores[i];
        
        // soma todos os valores
-       soma_total += arrValores[i];
+       nr_soma += arrValores[i];
+       nr_minimo = arrValores[i] < nr_minimo ? arrValores[i] : nr_minimo;
+       nr_maximo = arrValores[i] > nr_maximo ? arrValores[i] : nr_maximo;
     }
     
-    // inicia o minimo com o minimo
-    long long nr_min = soma_total;
-    
-    // o maximo iniciamos como zero
-    long long nr_max = 0;
-    
-    for(int i = 0; i < 5; i++){
-	    nr_min = (nr_min > (soma_total - arrValores[i]) ? (soma_total - arrValores[i]) : nr_min);
-	    nr_max = (nr_max < (soma_total - arrValores[i]) ? (soma_total - arrValores[i]) : nr_max);
-	}
-    
-    cout << nr_min << " " << nr_max;
-
-
-    // python solution
-    // pegue o minimo e o maximo
-    // nums = [int(x) for x in input().strip().split(' ')]
-    // a soma de tudo menos o maximo = minimo
-    // a soma de tudo menos o minimo = maximo
-    // print(sum(nums) - max(nums), sum(nums) - min(nums))
+    cout << (nr_soma - nr_maximo) << " " << (nr_soma - nr_minimo);
     
     return 0;
 }
