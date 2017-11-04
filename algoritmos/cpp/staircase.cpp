@@ -1,11 +1,3 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-
-using namespace std;
-
 /*
 Consider a staircase of size :
 
@@ -42,6 +34,15 @@ Explanation
 
 The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
 */
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
 int main(){
     int nr_tamanho;
     cin >> nr_tamanho;
