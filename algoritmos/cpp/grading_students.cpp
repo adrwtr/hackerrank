@@ -50,7 +50,7 @@ Em português
     ler várias notas
     se a nota < 38 nao faz nada
     verificar se ela é multipla de 5 e se a diferença for menor que 3
-    e entao atribuir
+    e entao atribuir a diferença
 
     se trata de uma simples logica de arredondamento para cima
 */
@@ -64,21 +64,17 @@ using namespace std;
 
 vector < int > solve(vector < int > arrNotas) {
     int vl_multiplo = 0;
-
+    int nr_sum_temp = 0;
     for (ssize_t i = 0; i < arrNotas.size(); i++) {
-        if (arrNotas[i] < 38) {
-            continue;
-        }
+        if (arrNotas[i] >=38) {
 
-        // encontra o próximo multiplo
-        int nr_multiplo = arrNotas[i];
-        while (nr_multiplo % 5 >= 1) {
-            nr_multiplo += 1;
-        }
+            // proximo valor que é divisivel por 5
+            nr_sum_temp = (5 - (arrNotas[i] % 5));
 
-        if (nr_multiplo > arrNotas[i] && (nr_multiplo - arrNotas[i])  < 3) {
-            arrNotas[i] = nr_multiplo;
-        }
+            if (nr_sum_temp < 3) {
+               arrNotas[i] += nr_sum_temp;
+            }
+        }  
     }
 
     return arrNotas;

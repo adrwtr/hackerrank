@@ -26,7 +26,7 @@ Explanation 0
 We have one candle of height , one candle of height , and two candles of height . Colleen only blows out the tallest candles, meaning the candles where . Because there are  such candles, we print  on a new line.
 
 Portugues:
-    devemos encontrar  a mior vela
+    devemos encontrar  a maior vela
     depois devemos contar qntas delas tem e retornar
 */
 #include <cmath>
