@@ -20,6 +20,9 @@ Sample Output
 Explanation
 
 We print the sum of the array's elements, which is: .
+
+portugues
+    somar todos os valores de um array
 */
 #include <bits/stdc++.h>
 

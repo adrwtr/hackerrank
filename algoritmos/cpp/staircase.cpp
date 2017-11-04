@@ -33,6 +33,9 @@ Sample Output
 Explanation
 
 The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+
+portugues
+    Imprime a stair case
 */
 
 #include <cmath>

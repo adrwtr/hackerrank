@@ -42,6 +42,11 @@ Now, let's compare each individual score:
 , so nobody receives a point.
 , so Bob receives  point.
 Alice's comparison score is , and Bob's comparison score is . Thus, we print 1 1 (Alice's comparison score followed by Bob's comparison score) on a single line.
+
+
+portugues
+    Compara pontos entre alice e bob
+    cada pontuação vale 1 ponto, mostra quem mais pontuou
 */
 #include <bits/stdc++.h>
 

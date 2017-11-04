@@ -30,6 +30,10 @@ If we sum everything except , our sum is .
 As you can see, the minimal sum is  and the maximal sum is . Thus, we print these minimal and maximal sums as two space-separated integers on a new line.
 
 Hints: Beware of integer overflow! Use 64-bit Integer.
+
+portugues
+    recebe 5 valores, e verifica a soma do minimo e do maximo
+    descontando 1 dos valores. (soma dos 4 maiores, e 4 menores)
 */
 #include <bits/stdc++.h>
 #include <cmath>

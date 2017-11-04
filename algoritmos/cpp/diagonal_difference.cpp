@@ -42,6 +42,9 @@ Sum across the secondary diagonal: 4 + 5 + 10 = 19
 Difference: |4 - 19| = 15
 
 Note: |x| is absolute value function
+
+portugues
+    realiza o calculo da diferença diagonal de um array
 */
 #include <cmath>
 #include <cstdio>

@@ -28,6 +28,10 @@ Explanation
 
 There are  positive numbers,  negative numbers, and  zero in the array. 
 The respective fractions of positive numbers, negative numbers and zeroes are ,  and , respectively.
+
+portugues
+    Mostra a porcentagem de quantos valores positivos, 
+    negativos e zeros foi encontrado no array
 */
 #include <cmath>
 #include <cstdio>
