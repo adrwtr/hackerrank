@@ -55,28 +55,27 @@ int main(){
     int nr_espacos = nr_tamanho;
     int nr_estrelas = 0;
     
-    while (nr_tamanho > 0) {    	    	
-    	nr_espacos = nr_espacos - 1;
-    	nr_estrelas = nr_estrelas + 1;
-    	
-    	for (int i=0; i<nr_espacos; i++) {
-    		cout << " ";
-		}
-	
-		for (int i=0; i<nr_estrelas; i++) {
-    		cout << "#";
-		}
-		
-		cout << endl;
-    	
-    	nr_tamanho = nr_tamanho - 1;
-	}
-	
-	// solução usando strings em c++
-	// for(int i = 1; i <= nr_tamanho; ++i){
+    while (nr_tamanho > 0) {   
+        nr_espacos = nr_espacos - 1;
+        nr_estrelas = nr_estrelas + 1;
+
+        for (int i=0; i<nr_espacos; i++) {
+            cout << " ";
+        }
+
+        for (int i=0; i<nr_estrelas; i++) {
+            cout << "#";
+        }
+
+        cout << endl;
+
+        nr_tamanho = nr_tamanho - 1;
+    }
+
+    // solução usando strings em c++
+    // for(int i = 1; i <= nr_tamanho; ++i){
     //        cout << std::setfill(' ') << std::setw(nr_tamanho) << string(i, '#') << "\n";
     // }
-        
+
     return 0;
 }
-

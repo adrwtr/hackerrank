@@ -68,6 +68,14 @@ int main() {
 	}
     
     cout << nr_min << " " << nr_max;
+
+
+    // python solution
+    // pegue o minimo e o maximo
+    // nums = [int(x) for x in input().strip().split(' ')]
+    // a soma de tudo menos o maximo = minimo
+    // a soma de tudo menos o minimo = maximo
+    // print(sum(nums) - max(nums), sum(nums) - min(nums))
     
     return 0;
 }
