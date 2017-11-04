@@ -10,12 +10,12 @@ string timeConversion(string ds_hora_am) {
     // pega apenas a hora inicial para comparacao
     string ds_hora = ds_hora_am.substr(0, 2);
 
-    // pega se é AM ou PM
+    // pega se e AM ou PM
     string ds_am_pm = ds_hora_am.substr(8, 2);
 
     if (ds_am_pm == "AM") {
-        // se a hora é 12 AM, 
-        // então começa com 00
+        // se a hora e 12 AM, 
+        // então comeca com 00
         if (ds_hora == "12") {
             return ds_meia_noite.append(
                 ds_hora_am, 2, 6
