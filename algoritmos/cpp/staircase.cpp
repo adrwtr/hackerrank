@@ -67,6 +67,11 @@ int main(){
     	
     	nr_tamanho = nr_tamanho - 1;
 	}
+	
+	// solução usando strings em c++
+	// for(int i = 1; i <= nr_tamanho; ++i){
+    //        cout << std::setfill(' ') << std::setw(nr_tamanho) << string(i, '#') << "\n";
+    // }
         
     return 0;
 }
