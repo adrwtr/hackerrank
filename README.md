@@ -12,7 +12,9 @@ O que aprendi com o HACKER RANK!!!!!
 * A diferença para o próximo número divisivel por 5 é (5 - (numero % 5));
 > exemplo: o proximo número divisivel de 57 é 60:
 > 57 mod 5 = 2
+
 > (5 - 2 = 3)
+
 > (57 + 3 = 60)
 
 ### C++
